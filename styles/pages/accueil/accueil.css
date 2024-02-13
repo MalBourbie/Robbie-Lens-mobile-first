@@ -1,0 +1,77 @@
+@import url("https: //fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
+* {
+  margin: 0;
+}
+* body {
+  font-family: "Manrope", sans-serif;
+  background-color: #FFFFFF;
+  font-size: 1.25rem;
+  color: #F9F8FF;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.25rem;
+}
+.header a {
+  margin-bottom: 2.5rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+}
+.header__nav a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1.25rem;
+}
+
+.photographie {
+  background-color: #1F2039;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+.photographie__title {
+  color: #A5B4FC;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688rem;
+  font-weight: 400;
+  margin: 2.5rem 0 2rem 0;
+}
+.photographie a {
+  padding: 1.25rem 1.875rem;
+  background: linear-gradient(#8E86B5, #ACAEED);
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  color: white;
+  margin-top: 2.5rem;
+}
+.photographie a:hover {
+  background: linear-gradient(#696484, #8788BA);
+}
+
+.dernierProjet {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+.dernierProjet__titre {
+  color: #1F2039;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688remv;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.dernierProjet__blocimg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/*# sourceMappingURL=accueil.css.map */

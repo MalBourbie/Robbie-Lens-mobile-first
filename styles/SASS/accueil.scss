@@ -1,0 +1,53 @@
+@use "./main" as *;
+ 
+.header {
+    @include flex($direction: column);
+    text-align: center;
+    padding: 1.25rem;
+
+    a {
+        margin-bottom: 2.5rem;
+    }
+
+    &__nav {
+        @include flex($direction: column);
+
+        a {
+            text-decoration: none;
+            color: $header-text-color;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+.photographie {
+    background-color: $dark-purple;
+    @include flex($direction: column);
+    padding: 2.5rem;
+
+    &__title {
+        @include titleh1;
+        margin: 2.5rem 0 2rem 0;
+    }
+
+    a {
+        @include button;
+        margin-top: 2.5rem;
+    }
+}
+
+.dernierProjet {
+    @include flex($direction: column);
+    padding: 2.5rem;
+
+    &__titre {
+        @include titleh2($dark-purple);
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__blocimg {
+        @include flex($direction: column);
+        gap: 1.25rem;
+    }
+}
