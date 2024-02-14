@@ -1,0 +1,91 @@
+@import url("https: //fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
+* {
+  margin: 0;
+}
+* body {
+  font-family: "Manrope", sans-serif;
+  background-color: #FFFFFF;
+  font-size: 1.25rem;
+  color: #F9F8FF;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header a {
+  margin-bottom: 2.5rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+}
+.header__nav a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio {
+  background-color: #1F2039;
+  padding: 4.375rem 0 3.125rem 1.875rem;
+}
+.portfolio__title {
+  color: #A5B4FC;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.paysages {
+  padding: 2.5rem;
+}
+.paysages__title {
+  color: #A5B4FC;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+.paysages__blocimg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.portraits {
+  padding: 0 2.5rem 2.5rem 2.5rem;
+}
+.portraits__title {
+  color: #A5B4FC;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+.portraits__blocimg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.footer a {
+  margin-bottom: 2.5rem;
+}
+.footer__socialNet {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

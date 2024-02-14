@@ -1,0 +1,112 @@
+@import url('https: //fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
+
+// color
+$white: #FFFFFF;
+$dark-purple: #1F2039;
+$light-purple-title: #A5B4FC;
+$button-color: linear-gradient(#8E86B5, #ACAEED);
+$button-color-hover: linear-gradient(#696484, #8788BA);
+
+// text config
+$title-font: "Montserrat", sans-serif;
+$body-font: "Manrope", sans-serif;
+
+$body-font-size: 1.25rem;
+$h1-font-size: 1.875rem;
+$h2-font-size: 1.688rem;
+
+$h1-font-weight: 400;
+$h2-font-weight: 400;
+
+$body-font-weight: 400;
+
+$title-text-color: $light-purple-title;
+$header-text-color: black;
+$body-text-color: #F9F8FF;
+
+// other
+$border: 0.06rem solid $light-purple-title;
+
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+
+@mixin titleh1 {
+    color: $title-text-color;
+    font-family: $title-font;
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+}
+
+@mixin titleh2($color: $light-purple-title) {
+    color: $color;
+    font-family: $title-font;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+}
+
+@mixin button {
+    padding: 1.25rem 1.875rem;
+    background: $button-color;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    font-family: $title-font;
+    font-size: $body-font-size;
+
+    &:hover {
+        background: $button-color-hover;
+    }
+}
+
+@mixin footerHeader {
+    @include flex($direction: column);
+    align-items: center;
+    padding: 1.5rem;
+
+    a {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@mixin header {
+    .header {
+        @include footerHeader;
+        
+        &__nav {
+            @include flex($direction: column);
+            
+            a {
+                text-decoration: none;
+                color: $header-text-color;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+}
+
+@mixin footer {
+    .footer {
+            @include footerHeader;
+    
+            &__socialNet {
+                @include flex($direction: column)
+            }
+        }
+}
+
+* {
+    margin: 0;
+    
+    body {
+        font-family: $body-font;
+        background-color: $white;
+        font-size: $body-font-size;
+        color: $body-text-color;
+        font-weight: $body-font-weight;
+    }
+}
+
