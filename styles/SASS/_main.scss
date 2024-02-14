@@ -13,7 +13,7 @@ $body-font: "Manrope", sans-serif;
 
 $body-font-size: 1.25rem;
 $h1-font-size: 1.688rem;
-$h2-font-size: 1.688remv;
+$h2-font-size: 1.688rem;
 
 $h1-font-weight: 400;
 $h2-font-weight: 400;
@@ -51,10 +51,48 @@ $body-text-color: #F9F8FF;
     border-radius: 50px;
     display: inline-block;
     color: white;
+    font-family: $title-font;
+    font-size: $body-font-size;
 
     &:hover {
         background: $button-color-hover;
     }
+}
+
+@mixin footerHeader {
+    @include flex($direction: column);
+    align-items: center;
+    padding: 1.5rem;
+
+    a {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@mixin header {
+    .header {
+        @include footerHeader;
+        
+        &__nav {
+            @include flex($direction: column);
+            
+            a {
+                text-decoration: none;
+                color: $header-text-color;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+}
+
+@mixin footer {
+    .footer {
+            @include footerHeader;
+    
+            &__socialNet {
+                @include flex($direction: column)
+            }
+        }
 }
 
 * {

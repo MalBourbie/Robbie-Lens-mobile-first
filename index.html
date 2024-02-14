@@ -68,35 +68,44 @@
                         alt="Lac Wanaka - Nouvelle-Zélande"
                     />
                 </div>
+                <a href="" class="dernierProjet__btnPortfolio"
+                    >VOIR MON PORTFOLIO</a
+                >
             </section>
-            <section>
-                <h2>Parlons de votre projet</h2>
-                <form action="" method="get">
-                    <div>
+            <section class="parlons">
+                <h2 class="parlons__title">Parlons de votre projet</h2>
+                <form action="" method="get" class="form">
+                    <div class="form__nomEmail">
                         <label for="nom">nom</label>
                         <input type="text" name="nom" id="nom" />
                     </div>
-                    <div>
+                    <div class="form__nomEmail">
                         <label for="email">email</label>
                         <input type="email" name="email" id="email" />
                     </div>
-                    <div>
+                    <div class="form__message">
                         <label for="message">message</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea
+                            name="message"
+                            id="message"
+                            rows="8"
+                        ></textarea>
                     </div>
-                    <button type="submit">ENVOYER</button>
+                    <button type="submit" class="form__btnSubmit">
+                        ENVOYER
+                    </button>
                 </form>
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <a href="index.html">
                 <img
                     src="assets/Logo/logo_robbie_lens.svg"
                     alt="Logo du site Robbie Lens"
                 />
             </a>
-            <div>
+            <div class="footer__socialNet">
                 <a href="https://www.instagram.com/">
                     <img
                         src="assets/Logo/instagram.svg"
