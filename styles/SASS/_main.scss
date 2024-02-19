@@ -67,9 +67,28 @@ $border: 0.06rem solid $light-purple-title;
     align-items: center;
     padding: 1.5rem;
 
-    a {
-        margin-bottom: 2.5rem;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
     }
+
+    a {
+        margin-bottom: 1.5rem;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    > a {
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: 1024px) {
+            margin: 0;
+            padding-left: 2.5rem;
+        }
+    }
+
 }
 
 @mixin header {
@@ -78,12 +97,21 @@ $border: 0.06rem solid $light-purple-title;
         
         &__nav {
             @include flex($direction: column);
-            
+            align-items: center;
+
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+                align-items: center;
+                gap: 9.375rem;
+                padding-right: 3.125rem;
+            }
+
             a {
                 text-decoration: none;
                 color: $header-text-color;
-                margin-bottom: 1.25rem;
             }
+
+            
         }
     }
 }
@@ -93,7 +121,13 @@ $border: 0.06rem solid $light-purple-title;
             @include footerHeader;
     
             &__socialNet {
-                @include flex($direction: column)
+                @include flex($direction: column);
+                @media screen and (min-width: 1024px) {
+                    flex-direction: row;
+                    gap: 3.125rem;
+                    padding-right: 3.125rem;
+                }
+
             }
         }
 }
