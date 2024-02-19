@@ -1,5 +1,5 @@
 @use "./main" as *;
- 
+
 @include header;
 
 .photographie {
@@ -7,14 +7,39 @@
     @include flex($direction: column);
     padding: 2.5rem;
 
-    &__title {
-        @include titleh1;
-        margin: 2.5rem 0 2rem 0;
-    }
+    .photographieContainer {
+        @include flex($direction: column);
 
-    a {
-        @include button;
-        margin-top: 2.5rem;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            padding: 100px 0 100px 0;
+            max-width: 1400px;
+            margin: auto;
+            gap: 150px;
+
+            > img {
+                order: 1;
+                width: 419px;
+                height: 425px;
+            }
+
+            > div {
+                width: 380px;
+            }
+        }
+
+        &__title {
+            @include titleh1;
+            margin: 2.5rem 0 2rem 0;
+            @media screen and (min-width: 1024px) {
+                font-size: 3.438rem;
+            }
+        }
+
+        a {
+            @include button;
+            margin-top: 2.5rem;
+        }
     }
 }
 
@@ -31,6 +56,21 @@
     &__blocimg {
         @include flex($direction: column);
         gap: 1.25rem;
+
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid: 350px 350px / 350px 350px 350px;
+            margin: auto;
+            @media screen and (max-width: 1170px) {
+                grid: 300px 300px / 300px 300px 300px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
     &__btnPortfolio {
@@ -45,15 +85,30 @@
     background-color: $dark-purple;
     padding: 3.125rem;
 
+    @media screen and (min-width: 1024px) {
+        @include flex($direction: column);
+        align-items: center;
+    }
+
     &__title {
         @include titleh2;
         text-align: center;
         margin-bottom: 2.5rem;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.188rem;
+        }
     }
 
     .form {
         @include flex($direction: column);
         align-items: center;
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            height: 100%;
+            max-width: 32.813rem;
+        }
 
         label {
             margin-bottom: 1rem;
@@ -75,7 +130,6 @@
             width: 100%;
             height: 100%;
 
-
             textarea {
                 font-size: 1.5rem;
                 font-family: $body-font;
@@ -87,7 +141,6 @@
             margin-top: 2.5rem;
             border: none;
         }
-
     }
 }
 
