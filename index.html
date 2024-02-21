@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Robbie Lens - Accueil</title>
         <link rel="stylesheet" href="styles/pages/accueil/accueil.css" />
+        <script src="./scripts/pages/accueil.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -39,7 +40,7 @@
                             la passion qui m'anime : capturer l'essence de
                             chaque instant.
                         </p>
-                        <a href="">UN PROJET ? ÉCRIVEZ-MOI</a>
+                        <a href="#form">UN PROJET ? ÉCRIVEZ-MOI</a>
                     </div>
                 </div>
             </section>
@@ -77,14 +78,24 @@
             </section>
             <section class="parlons">
                 <h2 class="parlons__title">Parlons de votre projet</h2>
-                <form action="" method="get" class="form">
+                <form action="" method="post" class="form" id="form">
                     <div class="form__nomEmail">
                         <label for="nom">nom</label>
-                        <input type="text" name="nom" id="nom" />
+                        <input
+                            type="text"
+                            name="nom"
+                            id="nom"
+                            autocomplete="name"
+                        />
                     </div>
                     <div class="form__nomEmail">
                         <label for="email">email</label>
-                        <input type="email" name="email" id="email" />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            autocomplete="email"
+                        />
                     </div>
                     <div class="form__message">
                         <label for="message">message</label>

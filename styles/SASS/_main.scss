@@ -1,11 +1,13 @@
-@import url('https: //fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
+@import url("https: //fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
 
 // color
-$white: #FFFFFF;
-$dark-purple: #1F2039;
-$light-purple-title: #A5B4FC;
-$button-color: linear-gradient(#8E86B5, #ACAEED);
-$button-color-hover: linear-gradient(#696484, #8788BA);
+$white: #ffffff;
+$dark-purple: #1f2039;
+$light-purple-title: #a5b4fc;
+$button-color: #8e86b5;
+$button-color-hover: #696484;
+// $button-color: linear-gradient(#8e86b5, #acaeed);
+// $button-color-hover: linear-gradient(#696484, #8788ba);
 
 // text config
 $title-font: "Montserrat", sans-serif;
@@ -22,7 +24,7 @@ $body-font-weight: 400;
 
 $title-text-color: $light-purple-title;
 $header-text-color: black;
-$body-text-color: #F9F8FF;
+$body-text-color: #f9f8ff;
 
 // other
 $border: 0.06rem solid $light-purple-title;
@@ -31,7 +33,6 @@ $border: 0.06rem solid $light-purple-title;
     display: flex;
     flex-direction: $direction;
 }
-
 
 @mixin titleh1 {
     color: $title-text-color;
@@ -49,16 +50,20 @@ $border: 0.06rem solid $light-purple-title;
 
 @mixin button {
     padding: 1.25rem 1.875rem;
-    background: $button-color;
+    background-color: $button-color;
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
     color: white;
     font-family: $title-font;
     font-size: $body-font-size;
+    transition: transform 450ms ease-in-out,
+        background-color 300ms 150ms ease-in-out;
 
     &:hover {
-        background: $button-color-hover;
+        background-color: $button-color-hover;
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }
 
@@ -88,13 +93,12 @@ $border: 0.06rem solid $light-purple-title;
             padding-left: 2.5rem;
         }
     }
-
 }
 
 @mixin header {
     .header {
         @include footerHeader;
-        
+
         &__nav {
             @include flex($direction: column);
             align-items: center;
@@ -110,31 +114,28 @@ $border: 0.06rem solid $light-purple-title;
                 text-decoration: none;
                 color: $header-text-color;
             }
-
-            
         }
     }
 }
 
 @mixin footer {
     .footer {
-            @include footerHeader;
-    
-            &__socialNet {
-                @include flex($direction: column);
-                @media screen and (min-width: 1024px) {
-                    flex-direction: row;
-                    gap: 3.125rem;
-                    padding-right: 3.125rem;
-                }
+        @include footerHeader;
 
+        &__socialNet {
+            @include flex($direction: column);
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+                gap: 3.125rem;
+                padding-right: 3.125rem;
             }
         }
+    }
 }
 
 * {
     margin: 0;
-    
+
     body {
         font-family: $body-font;
         background-color: $white;
@@ -143,4 +144,3 @@ $border: 0.06rem solid $light-purple-title;
         font-weight: $body-font-weight;
     }
 }
-
