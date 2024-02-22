@@ -4,9 +4,9 @@
 }
 * body {
   font-family: "Manrope", sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 1.25rem;
-  color: #F9F8FF;
+  color: #f9f8ff;
   font-weight: 400;
 }
 
@@ -16,45 +16,79 @@
   align-items: center;
   padding: 1.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .header a {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .header a {
+    margin-bottom: 0;
+  }
+}
+.header > a {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .header > a {
+    margin: 0;
+    padding-left: 2.5rem;
+  }
 }
 .header__nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 9.375rem;
+    padding-right: 3.125rem;
+  }
 }
 .header__nav a {
   text-decoration: none;
   color: black;
-  margin-bottom: 1.25rem;
 }
 
 .a-propos {
-  background-color: #1F2039;
+  background-color: #1f2039;
   padding: 2.5rem;
 }
 .a-propos__title {
-  color: #A5B4FC;
+  color: #a5b4fc;
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 400;
   text-align: center;
 }
 .a-propos__border {
-  border-right: 0.06rem solid #A5B4FC;
-  border-bottom: 0.06rem solid #A5B4FC;
+  border-right: 0.06rem solid #a5b4fc;
+  border-bottom: 0.06rem solid #a5b4fc;
   padding-bottom: 1.875rem;
+}
+@media screen and (min-width: 1024px) {
+  .a-propos__border {
+    max-width: 800px;
+    margin: auto;
+  }
 }
 .a-propos__paragraphe {
   margin-top: 3.125rem;
   margin-bottom: 1.875rem;
 }
 .a-propos__services {
-  color: #A5B4FC;
+  color: #a5b4fc;
   font-family: "Montserrat", sans-serif;
   font-size: 1.688rem;
   font-weight: 400;
-  color: #F9F8FF;
+  color: #f9f8ff;
   margin-bottom: 1.875rem;
 }
 .a-propos__btnPortfolio {
@@ -64,16 +98,19 @@
 }
 .a-propos__btnPortfolio a {
   padding: 1.25rem 1.875rem;
-  background: linear-gradient(#8E86B5, #ACAEED);
+  background-color: #8e86b5;
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
+  transition: transform 450ms ease-in-out, background-color 300ms 150ms ease-in-out;
 }
 .a-propos__btnPortfolio a:hover {
-  background: linear-gradient(#696484, #8788BA);
+  background-color: #696484;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .footer {
@@ -82,12 +119,39 @@
   align-items: center;
   padding: 1.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer a {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .footer a {
+    margin-bottom: 0;
+  }
+}
+.footer > a {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .footer > a {
+    margin: 0;
+    padding-left: 2.5rem;
+  }
 }
 .footer__socialNet {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__socialNet {
+    flex-direction: row;
+    gap: 3.125rem;
+    padding-right: 3.125rem;
+  }
 }
 
 /*# sourceMappingURL=a-propos.css.map */

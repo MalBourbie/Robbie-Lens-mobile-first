@@ -8,13 +8,17 @@
 
     &__title {
         @include titleh1;
-        text-align: center
+        text-align: center;
     }
 
     &__border {
         border-right: $border;
         border-bottom: $border;
         padding-bottom: 1.875rem;
+        @media screen and (min-width: 1024px) {
+            max-width: 800px;
+            margin: auto;
+        }
     }
 
     &__paragraphe {
@@ -38,6 +42,5 @@
         }
     }
 }
-
 
 @include footer;
