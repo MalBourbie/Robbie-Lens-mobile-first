@@ -1,0 +1,21 @@
+.footer {
+    @extend .footer-header;
+
+    &__logo {
+        @extend .footer-header__logo;
+    }
+
+    &__social-net {
+        @include flex($direction: column);
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            gap: 3.125rem;
+            padding-right: 3.125rem;
+        }
+
+        &_a {
+            @extend .footer-header_a;
+        }
+    }
+}

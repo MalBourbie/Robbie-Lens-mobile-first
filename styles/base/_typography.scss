@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+
+    body {
+        font-family: $body-font;
+        background-color: $white;
+        font-size: $body-font-size;
+        color: $body-text-color;
+        font-weight: $body-font-weight;
+    }
+}

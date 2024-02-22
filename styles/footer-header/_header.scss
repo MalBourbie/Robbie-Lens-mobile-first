@@ -1,0 +1,22 @@
+.header {
+    @extend .footer-header;
+
+    &__logo {
+        @extend .footer-header__logo;
+    }
+
+    &__nav {
+        @include flex($direction: column);
+        align-items: center;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            gap: 9.375rem;
+            padding-right: 3.125rem;
+        }
+
+        &_a {
+            @extend .footer-header_a;
+        }
+    }
+}
