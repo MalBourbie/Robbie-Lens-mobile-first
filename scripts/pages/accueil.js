@@ -30,24 +30,28 @@
     // Récupértion du champ de l'email
     const email = document.getElementById("email")
     const verificationEmail = new RegExp(
-        "[a-zA-Z0-9éè._-]+@[a-zA-Z0-9éè._-]+.[a-zA-Z0-9éè._-]+"
+        "[a-zA-Z0-9éè._-]+@[a-zA-Z0-9éè._-]+.[a-zA-Z0-9éè._-]+$"
     )
 
     email.addEventListener("blur", (event) => {
         email.value === ""
-            ? event.target.classList.remove("invalid")
+            ? event.target.classList.remove(
+                  "form__nom-email-contenair--invalid"
+              )
             : verificationEmail.test(event.target.value) === false
-            ? event.target.classList.add("invalid")
-            : event.target.classList.remove("invalid")
+            ? event.target.classList.add("form__nom-email-contenair--invalid")
+            : event.target.classList.remove(
+                  "form__nom-email-contenair--invalid"
+              )
     })
 }
 
 // if (email.value === "") {
-//     event.target.classList.remove("invalid")
+//     event.target.classList.remove("form__nom-email-contenair--invalid")
 // } else {
 //     if (verificationEmail.test(email.value) === false) {
-//             event.target.classList.add("invalid")
+//             event.target.classList.add("form__nom-email-contenair--invalid")
 //     } else {
-//         event.target.classList.remove("invalid")
+//         event.target.classList.remove("form__nom-email-contenair--invalid")
 //     }
 // }

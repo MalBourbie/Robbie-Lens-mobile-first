@@ -218,7 +218,7 @@
   border: 2px solid #a5b4fc;
   padding: 2px;
 }
-.form__nom-email-contenair .invalid {
+.form__nom-email-contenair--invalid {
   background-color: red;
   color: white;
 }
