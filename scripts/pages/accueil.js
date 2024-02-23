@@ -7,7 +7,7 @@
 // bloc de la gestion du zoom sur les images au click
 {
     // Images de la section dernierProjet
-    const clickImage = document.querySelectorAll(".dernierProjet__blocimg img")
+    const clickImage = document.querySelectorAll(".dernier-projet__image")
     // Récupération de la dernière image affecter à la class "clickImage"
     let clickPrecedent = clickImage[0]
 

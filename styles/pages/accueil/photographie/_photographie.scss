@@ -1,0 +1,42 @@
+.photographie {
+    background-color: $dark-purple;
+    @include flex($direction: column);
+    padding: 2.5rem;
+
+    @media screen and (min-width: 1024px) {
+        &__image {
+            order: 2;
+            width: 419px;
+            height: 425px;
+        }
+
+        &__bloc-text {
+            width: 380px;
+        }
+    }
+
+    &__headers {
+        @extend .headers1;
+        margin: 2.5rem 0 2rem 0;
+        @media screen and (min-width: 1024px) {
+            font-size: 3.438rem;
+        }
+    }
+
+    &__btn {
+        @extend .button;
+        margin-top: 2.5rem;
+    }
+}
+
+.photographie-container {
+    @include flex($direction: column);
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        padding: 100px 0 100px 0;
+        max-width: 1400px;
+        margin: auto;
+        gap: 150px;
+    }
+}

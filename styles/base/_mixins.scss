@@ -3,35 +3,9 @@
     flex-direction: $direction;
 }
 
-@mixin titleh1 {
-    color: $title-text-color;
-    font-family: $title-font;
-    font-size: $h1-font-size;
-    font-weight: $h1-font-weight;
-}
-
 @mixin titleh2($color: $light-purple-title) {
     color: $color;
     font-family: $title-font;
     font-size: $h2-font-size;
     font-weight: $h2-font-weight;
-}
-
-@mixin button {
-    padding: 1.25rem 1.875rem;
-    background-color: $button-color;
-    text-decoration: none;
-    border-radius: 50px;
-    display: inline-block;
-    color: white;
-    font-family: $title-font;
-    font-size: $body-font-size;
-    transition: transform 450ms ease-in-out,
-        background-color 300ms 150ms ease-in-out;
-
-    &:hover {
-        background-color: $button-color-hover;
-        transform: scale(1.1);
-        cursor: pointer;
-    }
 }
