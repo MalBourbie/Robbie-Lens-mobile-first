@@ -1,0 +1,8 @@
+.portfolio {
+    background-color: $dark-purple;
+    padding: 4.375rem 0 3.125rem 1.875rem;
+
+    &__title {
+        @extend .headers1;
+    }
+}

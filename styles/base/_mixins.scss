@@ -9,3 +9,9 @@
     font-size: $h2-font-size;
     font-weight: $h2-font-weight;
 }
+
+@mixin titleBlack {
+    @include titleh2;
+    color: black;
+    margin-bottom: 2.5rem;
+}

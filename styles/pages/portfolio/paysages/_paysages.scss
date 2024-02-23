@@ -1,0 +1,12 @@
+.paysages {
+    padding: 2.5rem;
+
+    &__title {
+        @include titleBlack;
+    }
+
+    &__blocimg {
+        @include flex($direction: column);
+        gap: 1.25rem;
+    }
+}

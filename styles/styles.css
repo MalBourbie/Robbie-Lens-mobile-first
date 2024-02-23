@@ -280,6 +280,44 @@
   margin-top: 4.375rem;
   margin-bottom: 4.375rem;
 }
+.paysages {
+  padding: 2.5rem;
+}
+.paysages__title {
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+.paysages__blocimg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.portfolio {
+  background-color: #1f2039;
+  padding: 4.375rem 0 3.125rem 1.875rem;
+}
+.portraits {
+  padding: 0 2.5rem 2.5rem 2.5rem;
+}
+.portraits__title {
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.688rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+.portraits__blocimg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .button, .photographie__btn, .dernier-projet__btn, .form__btnSubmit, .a-propos__btnPortfolio a {
   padding: 1.25rem 1.875rem;
   background-color: #8e86b5;
@@ -297,7 +335,7 @@
   cursor: pointer;
 }
 
-.headers1, .photographie__headers, .a-propos__title {
+.headers1, .photographie__headers, .a-propos__title, .portfolio__title {
   color: #a5b4fc;
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
