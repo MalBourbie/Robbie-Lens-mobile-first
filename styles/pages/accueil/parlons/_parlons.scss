@@ -1,0 +1,86 @@
+.parlons {
+    background-color: $dark-purple;
+    padding: 3.125rem;
+
+    @media screen and (min-width: 1024px) {
+        @include flex($direction: column);
+        align-items: center;
+    }
+
+    &__headers {
+        @include titleh2;
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.188rem;
+        }
+    }
+}
+
+.form {
+    @include flex($direction: column);
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        max-width: 32.813rem;
+    }
+
+    &__label {
+        margin-bottom: 1rem;
+    }
+
+    &__nom-email-contenair {
+        @include flex($direction: column);
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.5rem;
+
+        &__input {
+            font-size: 1.5rem;
+            border-radius: 10px;
+            border: none;
+            transition: background-color 200ms;
+            padding: 4px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid $light-purple-title;
+                padding: 2px;
+            }
+        }
+
+        .invalid {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    &__message-contenair {
+        @include flex($direction: column);
+        width: 100%;
+        height: 100%;
+
+        &__textarea {
+            font-size: 1.5rem;
+            font-family: $body-font;
+            border-radius: 10px;
+            border: none;
+            padding: 4px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid $light-purple-title;
+                padding: 2px;
+            }
+        }
+    }
+
+    &__btnSubmit {
+        @extend .button;
+        margin-top: 2.5rem;
+        border: none;
+    }
+}
