@@ -331,7 +331,7 @@
 }
 .button:hover, .photographie__btn:hover, .dernier-projet__btn:hover, .form__btnSubmit:hover, .a-propos__btnPortfolio a:hover {
   background-color: #696484;
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-10px);
   cursor: pointer;
 }
 
